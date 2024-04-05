@@ -173,6 +173,7 @@ input:hover{
     transition: .3s;
 }
 iframe{
+    margin: 10px;
     width: 100%;
 }
 .resultado{
