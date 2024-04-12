@@ -2,26 +2,49 @@ window.addEventListener("scroll", function(){
     let header = this.document.querySelector("#header")
     header.classList.toggle('rolagem', window.scrollY > 0)
 })
+function sim(){
+    let div = document.getElementById("div-input")
+   
+
+    if(div.style.display == 'none'){
+        div.style.display = 'block'
+    }else{
+        div.style.display = 'block'
+    }
+
+}
+function nao(){
+    let div = document.getElementById("div-input")
+   
+
+    if(div.style.display == 'block'){
+        div.style.display = 'none'
+    }else{
+        div.style.display = 'none'
+    }
+
+}
 
 function calcAm(){
-    let kit = Number(document.getElementById("kit").value)
-    let carac = Number(document.getElementById("carac").value)
-    let sangue = Number(document.getElementById("sangue").value)
-    let music = Number(document.getElementById("music").value)
-    let mascote = Number(document.getElementById("mascote").value)
-    let quiz = Number(document.getElementById("quiz").value)
-    let ex = Number(document.getElementById("ex").value)
-    let foto = Number(document.getElementById("visita1").value)
-    let video = Number(document.getElementById("visita2").value)
+    let leite = Number(document.getElementById('leite').value)
+    let sangue = Number(document.getElementById('sangue').value)
+    let acao = Number(document.getElementById('acao').value)
+    let mascote = Number(document.getElementById('mascote').value)
+    let quiz = Number(document.getElementById('quiz').value)
+    let extra = Number(document.getElementById('extra').value)
+    let kit = Number(document.getElementById('kit').value)
+    let inp1 = Number(document.getElementById('inp-1').value)
+    let inp2 = Number(document.getElementById('inp-2').value)
+    let inp3 = Number(document.getElementById('inp-3').value)
+    let inp4 = Number(document.getElementById('inp-4').value)
+    let inp5 = Number(document.getElementById('inp-5').value)
+    let inp6 = Number(document.getElementById('inp-6').value)
+    let inp7 = Number(document.getElementById('inp-7').value)
+    let inp8 = Number(document.getElementById('inp-8').value)
     let valKit
-    let valCarac
-    let valSangue
-    let valMusic
-    let valMascote
-    let valQuiz
-    let valEx
-    let valFoto
-    let valVideo
+    leite = leite * 2
+    sangue = sangue * 20
+
     if(kit >= 91){
         valKit = 5000
     }else if(kit >=72 && kit < 91){
@@ -34,77 +57,31 @@ function calcAm(){
         valKit = 0
     }
 
-    if(carac >= 1){
-        valCarac = 100
-    }else{
-        valCarac = 0
-    }
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
 
-    if(sangue >=1){
-        valSangue = 20
-    }else{
-        valSangue = 0
-    }
+    window.document.getElementById("resp-am").innerHTML = total
 
-    if(music >=1){
-        valMusic = 1500
-    }else{
-        valMusic = 0
-    }
-
-    if(mascote >=1){
-        valMascote =500
-    }else{
-        valMascote = 0
-    }
-
-    if(quiz >=1){
-        valQuiz =1000
-    }else{
-        valQuiz=0
-    }
-
-    if(ex >=1){
-        valEx=1000
-    }else{
-        valEx = 0
-    }
-
-    if(foto >=1){
-        valFoto = 500
-    }else{
-        valFoto = 0
-    }
-
-    if(video >=1){
-        valVideo = 500
-    }else{
-        valVideo = 0
-    }
-
-    let resultado = valKit + valCarac + valSangue + valMusic + valMascote + valQuiz + valEx + valFoto + valVideo
-    window.document.getElementById("resp-am").innerHTML = resultado
-    
 }
 function calcLr(){
-    let kit = Number(document.getElementById("kit").value)
-    let carac = Number(document.getElementById("carac").value)
-    let sangue = Number(document.getElementById("sangue").value)
-    let music = Number(document.getElementById("music").value)
-    let mascote = Number(document.getElementById("mascote").value)
-    let quiz = Number(document.getElementById("quiz").value)
-    let ex = Number(document.getElementById("ex").value)
-    let foto = Number(document.getElementById("visita1").value)
-    let video = Number(document.getElementById("visita2").value)
+    let leite = Number(document.getElementById('leite').value)
+    let sangue = Number(document.getElementById('sangue').value)
+    let acao = Number(document.getElementById('acao').value)
+    let mascote = Number(document.getElementById('mascote').value)
+    let quiz = Number(document.getElementById('quiz').value)
+    let extra = Number(document.getElementById('extra').value)
+    let kit = Number(document.getElementById('kit').value)
+    let inp1 = Number(document.getElementById('inp-1').value)
+    let inp2 = Number(document.getElementById('inp-2').value)
+    let inp3 = Number(document.getElementById('inp-3').value)
+    let inp4 = Number(document.getElementById('inp-4').value)
+    let inp5 = Number(document.getElementById('inp-5').value)
+    let inp6 = Number(document.getElementById('inp-6').value)
+    let inp7 = Number(document.getElementById('inp-7').value)
+    let inp8 = Number(document.getElementById('inp-8').value)
     let valKit
-    let valCarac
-    let valSangue
-    let valMusic
-    let valMascote
-    let valQuiz
-    let valEx
-    let valFoto
-    let valVideo
+    leite = leite * 2
+    sangue = sangue * 20
+
     if(kit >= 84){
         valKit = 5000
     }else if(kit >=67 && kit < 84){
@@ -117,77 +94,31 @@ function calcLr(){
         valKit = 0
     }
 
-    if(carac >= 1){
-        valCarac = 100
-    }else{
-        valCarac = 0
-    }
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
 
-    if(sangue >=1){
-        valSangue = 20
-    }else{
-        valSangue = 0
-    }
+    window.document.getElementById("resp-lr").innerHTML = total
 
-    if(music >=1){
-        valMusic = 1500
-    }else{
-        valMusic = 0
-    }
-
-    if(mascote >=1){
-        valMascote =500
-    }else{
-        valMascote = 0
-    }
-
-    if(quiz >=1){
-        valQuiz =1000
-    }else{
-        valQuiz=0
-    }
-
-    if(ex >=1){
-        valEx=1000
-    }else{
-        valEx = 0
-    }
-
-    if(foto >=1){
-        valFoto = 500
-    }else{
-        valFoto = 0
-    }
-
-    if(video >=1){
-        valVideo = 500
-    }else{
-        valVideo = 0
-    }
-
-    let resultado = valKit + valCarac + valSangue + valMusic + valMascote + valQuiz + valEx + valFoto + valVideo
-    window.document.getElementById("resp-lr").innerHTML = resultado
-    
 }
 function calcRx(){
-    let kit = Number(document.getElementById("kit").value)
-    let carac = Number(document.getElementById("carac").value)
-    let sangue = Number(document.getElementById("sangue").value)
-    let music = Number(document.getElementById("music").value)
-    let mascote = Number(document.getElementById("mascote").value)
-    let quiz = Number(document.getElementById("quiz").value)
-    let ex = Number(document.getElementById("ex").value)
-    let foto = Number(document.getElementById("visita1").value)
-    let video = Number(document.getElementById("visita2").value)
+    let leite = Number(document.getElementById('leite').value)
+    let sangue = Number(document.getElementById('sangue').value)
+    let acao = Number(document.getElementById('acao').value)
+    let mascote = Number(document.getElementById('mascote').value)
+    let quiz = Number(document.getElementById('quiz').value)
+    let extra = Number(document.getElementById('extra').value)
+    let kit = Number(document.getElementById('kit').value)
+    let inp1 = Number(document.getElementById('inp-1').value)
+    let inp2 = Number(document.getElementById('inp-2').value)
+    let inp3 = Number(document.getElementById('inp-3').value)
+    let inp4 = Number(document.getElementById('inp-4').value)
+    let inp5 = Number(document.getElementById('inp-5').value)
+    let inp6 = Number(document.getElementById('inp-6').value)
+    let inp7 = Number(document.getElementById('inp-7').value)
+    let inp8 = Number(document.getElementById('inp-8').value)
     let valKit
-    let valCarac
-    let valSangue
-    let valMusic
-    let valMascote
-    let valQuiz
-    let valEx
-    let valFoto
-    let valVideo
+    leite = leite * 2
+    sangue = sangue * 20
+
     if(kit >= 84){
         valKit = 5000
     }else if(kit >=67 && kit < 84){
@@ -199,78 +130,31 @@ function calcRx(){
     }else{
         valKit = 0
     }
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
 
-    if(carac >= 1){
-        valCarac = 100
-    }else{
-        valCarac = 0
-    }
+    window.document.getElementById("resp-rx").innerHTML = total
 
-    if(sangue >=1){
-        valSangue = 20
-    }else{
-        valSangue = 0
-    }
-
-    if(music >=1){
-        valMusic = 1500
-    }else{
-        valMusic = 0
-    }
-
-    if(mascote >=1){
-        valMascote =500
-    }else{
-        valMascote = 0
-    }
-
-    if(quiz >=1){
-        valQuiz =1000
-    }else{
-        valQuiz=0
-    }
-
-    if(ex >=1){
-        valEx=1000
-    }else{
-        valEx = 0
-    }
-
-    if(foto >=1){
-        valFoto = 500
-    }else{
-        valFoto = 0
-    }
-
-    if(video >=1){
-        valVideo = 500
-    }else{
-        valVideo = 0
-    }
-
-    let resultado = valKit + valCarac + valSangue + valMusic + valMascote + valQuiz + valEx + valFoto + valVideo
-    window.document.getElementById("resp-rx").innerHTML = resultado
-    
 }
 function calcVd(){
-    let kit = Number(document.getElementById("kit").value)
-    let carac = Number(document.getElementById("carac").value)
-    let sangue = Number(document.getElementById("sangue").value)
-    let music = Number(document.getElementById("music").value)
-    let mascote = Number(document.getElementById("mascote").value)
-    let quiz = Number(document.getElementById("quiz").value)
-    let ex = Number(document.getElementById("ex").value)
-    let foto = Number(document.getElementById("visita1").value)
-    let video = Number(document.getElementById("visita2").value)
+    let leite = Number(document.getElementById('leite').value)
+    let sangue = Number(document.getElementById('sangue').value)
+    let acao = Number(document.getElementById('acao').value)
+    let mascote = Number(document.getElementById('mascote').value)
+    let quiz = Number(document.getElementById('quiz').value)
+    let extra = Number(document.getElementById('extra').value)
+    let kit = Number(document.getElementById('kit').value)
+    let inp1 = Number(document.getElementById('inp-1').value)
+    let inp2 = Number(document.getElementById('inp-2').value)
+    let inp3 = Number(document.getElementById('inp-3').value)
+    let inp4 = Number(document.getElementById('inp-4').value)
+    let inp5 = Number(document.getElementById('inp-5').value)
+    let inp6 = Number(document.getElementById('inp-6').value)
+    let inp7 = Number(document.getElementById('inp-7').value)
+    let inp8 = Number(document.getElementById('inp-8').value)
     let valKit
-    let valCarac
-    let valSangue
-    let valMusic
-    let valMascote
-    let valQuiz
-    let valEx
-    let valFoto
-    let valVideo
+    leite = leite * 2
+    sangue = sangue * 20
+
     if(kit >= 81){
         valKit = 5000
     }else if(kit >=67 && kit < 81){
@@ -282,78 +166,31 @@ function calcVd(){
     }else{
         valKit = 0
     }
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
 
-    if(carac >= 1){
-        valCarac = 100
-    }else{
-        valCarac = 0
-    }
+    window.document.getElementById("resp-vd").innerHTML = total
 
-    if(sangue >=1){
-        valSangue = 20
-    }else{
-        valSangue = 0
-    }
-
-    if(music >=1){
-        valMusic = 1500
-    }else{
-        valMusic = 0
-    }
-
-    if(mascote >=1){
-        valMascote =500
-    }else{
-        valMascote = 0
-    }
-
-    if(quiz >=1){
-        valQuiz =1000
-    }else{
-        valQuiz=0
-    }
-
-    if(ex >=1){
-        valEx=1000
-    }else{
-        valEx = 0
-    }
-
-    if(foto >=1){
-        valFoto = 500
-    }else{
-        valFoto = 0
-    }
-
-    if(video >=1){
-        valVideo = 500
-    }else{
-        valVideo = 0
-    }
-
-    let resultado = valKit + valCarac + valSangue + valMusic + valMascote + valQuiz + valEx + valFoto + valVideo
-    window.document.getElementById("resp-vd").innerHTML = resultado
-    
 }
 function calcVm(){
-    let kit = Number(document.getElementById("kit").value)
-    let carac = Number(document.getElementById("carac").value)
-    let sangue = Number(document.getElementById("sangue").value)
-    let music = Number(document.getElementById("music").value)
-    let mascote = Number(document.getElementById("mascote").value)
-    let quiz = Number(document.getElementById("quiz").value)
-    let ex = Number(document.getElementById("ex").value)
-    let foto = Number(document.getElementById("visita1").value)
-    let video = Number(document.getElementById("visita2").value)
+    let leite = Number(document.getElementById('leite').value)
+    let sangue = Number(document.getElementById('sangue').value)
+    let acao = Number(document.getElementById('acao').value)
+    let mascote = Number(document.getElementById('mascote').value)
+    let quiz = Number(document.getElementById('quiz').value)
+    let extra = Number(document.getElementById('extra').value)
+    let kit = Number(document.getElementById('kit').value)
+    let inp1 = Number(document.getElementById('inp-1').value)
+    let inp2 = Number(document.getElementById('inp-2').value)
+    let inp3 = Number(document.getElementById('inp-3').value)
+    let inp4 = Number(document.getElementById('inp-4').value)
+    let inp5 = Number(document.getElementById('inp-5').value)
+    let inp6 = Number(document.getElementById('inp-6').value)
+    let inp7 = Number(document.getElementById('inp-7').value)
+    let inp8 = Number(document.getElementById('inp-8').value)
     let valKit
-    let valCarac
-    let valSangue
-    let valMusic
-    let valMascote
-    let valQuiz
-    let valEx
-    let valFoto
-    let valVideo
+    leite = leite * 2
+    sangue = sangue * 20
+
     if(kit >= 104){
         valKit = 5000
     }else if(kit >=83 && kit < 104){
@@ -365,56 +202,8 @@ function calcVm(){
     }else{
         valKit = 0
     }
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
 
-    if(carac >= 1){
-        valCarac = 100
-    }else{
-        valCarac = 0
-    }
+    window.document.getElementById("resp-vm").innerHTML = total
 
-    if(sangue >=1){
-        valSangue = 20
-    }else{
-        valSangue = 0
-    }
-
-    if(music >=1){
-        valMusic = 1500
-    }else{
-        valMusic = 0
-    }
-
-    if(mascote >=1){
-        valMascote =500
-    }else{
-        valMascote = 0
-    }
-
-    if(quiz >=1){
-        valQuiz =1000
-    }else{
-        valQuiz=0
-    }
-
-    if(ex >=1){
-        valEx=1000
-    }else{
-        valEx = 0
-    }
-
-    if(foto >=1){
-        valFoto = 500
-    }else{
-        valFoto = 0
-    }
-
-    if(video >=1){
-        valVideo = 500
-    }else{
-        valVideo = 0
-    }
-
-    let resultado = valKit + valCarac + valSangue + valMusic + valMascote + valQuiz + valEx + valFoto + valVideo
-    window.document.getElementById("resp-vm").innerHTML = resultado
-    
 }

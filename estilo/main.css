@@ -20,6 +20,7 @@
     box-shadow: 2px 2px 15px #120aff7c;
     border: 1px solid black;
     border-radius: 20px;
+    height: auto;
 }
 .p-geral{
     text-indent: 40px;
