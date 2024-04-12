@@ -33,17 +33,25 @@ function calcAm(){
     let quiz = Number(document.getElementById('quiz').value)
     let extra = Number(document.getElementById('extra').value)
     let kit = Number(document.getElementById('kit').value)
-    let inp1 = Number(document.getElementById('inp-1').value)
-    let inp2 = Number(document.getElementById('inp-2').value)
-    let inp3 = Number(document.getElementById('inp-3').value)
-    let inp4 = Number(document.getElementById('inp-4').value)
-    let inp5 = Number(document.getElementById('inp-5').value)
-    let inp6 = Number(document.getElementById('inp-6').value)
-    let inp7 = Number(document.getElementById('inp-7').value)
-    let inp8 = Number(document.getElementById('inp-8').value)
+    let kit2 = Number(document.getElementById('kit2').value)
+    let lata = Number(document.getElementById('lata').value)
+    let arroz5 = Number(document.getElementById('arroz5').value)
+    let arroz1 = Number(document.getElementById('arroz1').value)
+    let feijao2 = Number(document.getElementById('feijao2').value)
+    let feijao1 = Number(document.getElementById('feijao1').value)
+    let macarrao = Number(document.getElementById('macarrao').value)
+    let oleo = Number(document.getElementById('oleo').value)
     let valKit
     leite = leite * 2
     sangue = sangue * 20
+    kit2 = kit2 *30
+    lata = lata*15
+    arroz5 = arroz5*5
+    arroz1 = arroz1*1
+    feijao2 = feijao2*2
+    feijao1 = feijao1*1
+    macarrao = macarrao*.5
+    oleo = oleo *1
 
     if(kit >= 91){
         valKit = 5000
@@ -57,8 +65,7 @@ function calcAm(){
         valKit = 0
     }
 
-    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
-
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + kit2 + lata + arroz5 + arroz1 + feijao2+ feijao1+ macarrao+ oleo
     window.document.getElementById("resp-am").innerHTML = total
 
 }
@@ -70,18 +77,27 @@ function calcLr(){
     let quiz = Number(document.getElementById('quiz').value)
     let extra = Number(document.getElementById('extra').value)
     let kit = Number(document.getElementById('kit').value)
-    let inp1 = Number(document.getElementById('inp-1').value)
-    let inp2 = Number(document.getElementById('inp-2').value)
-    let inp3 = Number(document.getElementById('inp-3').value)
-    let inp4 = Number(document.getElementById('inp-4').value)
-    let inp5 = Number(document.getElementById('inp-5').value)
-    let inp6 = Number(document.getElementById('inp-6').value)
-    let inp7 = Number(document.getElementById('inp-7').value)
-    let inp8 = Number(document.getElementById('inp-8').value)
+    let kit2 = Number(document.getElementById('kit2').value)
+    let lata = Number(document.getElementById('lata').value)
+    let arroz5 = Number(document.getElementById('arroz5').value)
+    let arroz1 = Number(document.getElementById('arroz1').value)
+    let feijao2 = Number(document.getElementById('feijao2').value)
+    let feijao1 = Number(document.getElementById('feijao1').value)
+    let macarrao = Number(document.getElementById('macarrao').value)
+    let oleo = Number(document.getElementById('oleo').value)
     let valKit
     leite = leite * 2
     sangue = sangue * 20
+    kit2 = kit2 *30
+    lata = lata*15
+    arroz5 = arroz5*5
+    arroz1 = arroz1*1
+    feijao2 = feijao2*2
+    feijao1 = feijao1*1
+    macarrao = macarrao*.5
+    oleo = oleo *1
 
+    
     if(kit >= 84){
         valKit = 5000
     }else if(kit >=67 && kit < 84){
@@ -94,7 +110,7 @@ function calcLr(){
         valKit = 0
     }
 
-    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + kit2 + lata + arroz5 + arroz1 + feijao2+ feijao1+ macarrao+ oleo
 
     window.document.getElementById("resp-lr").innerHTML = total
 
@@ -107,17 +123,25 @@ function calcRx(){
     let quiz = Number(document.getElementById('quiz').value)
     let extra = Number(document.getElementById('extra').value)
     let kit = Number(document.getElementById('kit').value)
-    let inp1 = Number(document.getElementById('inp-1').value)
-    let inp2 = Number(document.getElementById('inp-2').value)
-    let inp3 = Number(document.getElementById('inp-3').value)
-    let inp4 = Number(document.getElementById('inp-4').value)
-    let inp5 = Number(document.getElementById('inp-5').value)
-    let inp6 = Number(document.getElementById('inp-6').value)
-    let inp7 = Number(document.getElementById('inp-7').value)
-    let inp8 = Number(document.getElementById('inp-8').value)
+    let kit2 = Number(document.getElementById('kit2').value)
+    let lata = Number(document.getElementById('lata').value)
+    let arroz5 = Number(document.getElementById('arroz5').value)
+    let arroz1 = Number(document.getElementById('arroz1').value)
+    let feijao2 = Number(document.getElementById('feijao2').value)
+    let feijao1 = Number(document.getElementById('feijao1').value)
+    let macarrao = Number(document.getElementById('macarrao').value)
+    let oleo = Number(document.getElementById('oleo').value)
     let valKit
     leite = leite * 2
     sangue = sangue * 20
+    kit2 = kit2 *30
+    lata = lata*15
+    arroz5 = arroz5*5
+    arroz1 = arroz1*1
+    feijao2 = feijao2*2
+    feijao1 = feijao1*1
+    macarrao = macarrao*.5
+    oleo = oleo *1
 
     if(kit >= 84){
         valKit = 5000
@@ -130,7 +154,8 @@ function calcRx(){
     }else{
         valKit = 0
     }
-    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
+
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + kit2 + lata + arroz5 + arroz1 + feijao2+ feijao1+ macarrao+ oleo
 
     window.document.getElementById("resp-rx").innerHTML = total
 
@@ -143,17 +168,26 @@ function calcVd(){
     let quiz = Number(document.getElementById('quiz').value)
     let extra = Number(document.getElementById('extra').value)
     let kit = Number(document.getElementById('kit').value)
-    let inp1 = Number(document.getElementById('inp-1').value)
-    let inp2 = Number(document.getElementById('inp-2').value)
-    let inp3 = Number(document.getElementById('inp-3').value)
-    let inp4 = Number(document.getElementById('inp-4').value)
-    let inp5 = Number(document.getElementById('inp-5').value)
-    let inp6 = Number(document.getElementById('inp-6').value)
-    let inp7 = Number(document.getElementById('inp-7').value)
-    let inp8 = Number(document.getElementById('inp-8').value)
+    let kit2 = Number(document.getElementById('kit2').value)
+    let lata = Number(document.getElementById('lata').value)
+    let arroz5 = Number(document.getElementById('arroz5').value)
+    let arroz1 = Number(document.getElementById('arroz1').value)
+    let feijao2 = Number(document.getElementById('feijao2').value)
+    let feijao1 = Number(document.getElementById('feijao1').value)
+    let macarrao = Number(document.getElementById('macarrao').value)
+    let oleo = Number(document.getElementById('oleo').value)
     let valKit
     leite = leite * 2
     sangue = sangue * 20
+    kit2 = kit2 *30
+    lata = lata*15
+    arroz5 = arroz5*5
+    arroz1 = arroz1*1
+    feijao2 = feijao2*2
+    feijao1 = feijao1*1
+    macarrao = macarrao*.5
+    oleo = oleo *1
+
 
     if(kit >= 81){
         valKit = 5000
@@ -166,30 +200,35 @@ function calcVd(){
     }else{
         valKit = 0
     }
-    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + kit2 + lata + arroz5 + arroz1 + feijao2+ feijao1+ macarrao+ oleo
 
     window.document.getElementById("resp-vd").innerHTML = total
 
 }
 function calcVm(){
-    let leite = Number(document.getElementById('leite').value)
-    let sangue = Number(document.getElementById('sangue').value)
-    let acao = Number(document.getElementById('acao').value)
     let mascote = Number(document.getElementById('mascote').value)
     let quiz = Number(document.getElementById('quiz').value)
     let extra = Number(document.getElementById('extra').value)
     let kit = Number(document.getElementById('kit').value)
-    let inp1 = Number(document.getElementById('inp-1').value)
-    let inp2 = Number(document.getElementById('inp-2').value)
-    let inp3 = Number(document.getElementById('inp-3').value)
-    let inp4 = Number(document.getElementById('inp-4').value)
-    let inp5 = Number(document.getElementById('inp-5').value)
-    let inp6 = Number(document.getElementById('inp-6').value)
-    let inp7 = Number(document.getElementById('inp-7').value)
-    let inp8 = Number(document.getElementById('inp-8').value)
+    let kit2 = Number(document.getElementById('kit2').value)
+    let lata = Number(document.getElementById('lata').value)
+    let arroz5 = Number(document.getElementById('arroz5').value)
+    let arroz1 = Number(document.getElementById('arroz1').value)
+    let feijao2 = Number(document.getElementById('feijao2').value)
+    let feijao1 = Number(document.getElementById('feijao1').value)
+    let macarrao = Number(document.getElementById('macarrao').value)
+    let oleo = Number(document.getElementById('oleo').value)
     let valKit
     leite = leite * 2
     sangue = sangue * 20
+    kit2 = kit2 *30
+    lata = lata*15
+    arroz5 = arroz5*5
+    arroz1 = arroz1*1
+    feijao2 = feijao2*2
+    feijao1 = feijao1*1
+    macarrao = macarrao*.5
+    oleo = oleo *1
 
     if(kit >= 104){
         valKit = 5000
@@ -202,8 +241,7 @@ function calcVm(){
     }else{
         valKit = 0
     }
-    let total = leite + sangue + acao + mascote + quiz + extra + valKit + inp1 + inp2 + inp3 + inp4 + inp5+ inp6+ inp7+ inp8
-
+    let total = leite + sangue + acao + mascote + quiz + extra + valKit + kit2 + lata + arroz5 + arroz1 + feijao2+ feijao1+ macarrao+ oleo
     window.document.getElementById("resp-vm").innerHTML = total
 
 }
